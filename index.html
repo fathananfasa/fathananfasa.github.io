@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio Muhammad Fathan Anfasa - Information Systems Graduate & Web Developer dari Indonesia. Fokus pada pengembangan aplikasi web dan arsitektur sistem.">
+  <title>Muhammad Fathan Anfasa — Web Developer Portfolio</title>
+
+  <!-- Design System Tokens & Base Styles -->
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       Fixed Navigation (PRD 2.2 & 5.1)
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Muhammad Fathan Anfasa Home">
+        <span class="brand-badge">MFA</span>
+        <span class="brand-name-compact">Fathan</span>
+        <span class="brand-name-full">Muhammad Fathan Anfasa</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#work" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-nav">Hubungi Saya</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         Hero Section (PRD 2.2, 2.3, 2.4 — About merged into Hero)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span class="hero-role">Information Systems Graduate &rarr; Web Developer</span>
+          </div>
+
+          <h1 class="hero-name">Muhammad Fathan Anfasa</h1>
+
+          <p class="hero-statement">
+            Membangun aplikasi web dari alur data, bukan cuma dari tampilan.
+          </p>
+
+          <p class="hero-about">
+            Saya adalah lulusan Sistem Informasi Universitas Gunadarma yang berfokus pada pengembangan aplikasi web dan
+            arsitektur sistem. Terbiasa mengubah ide atau permasalahan bisnis menjadi aplikasi nyata dengan integrasi
+            database dan backend yang terstruktur.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <!-- Signature Detail 4: Terminal Window Decoration in Hero -->
+        <div class="hero-terminal" aria-hidden="true">
+          <div class="terminal-header">
+            <span class="terminal-dot terminal-dot--red"></span>
+            <span class="terminal-dot terminal-dot--yellow"></span>
+            <span class="terminal-dot terminal-dot--green"></span>
+            <span class="terminal-title">fathan@system:~</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line"><span class="terminal-prompt">$</span> status: <span class="terminal-val">available
+                for work</span></p>
+            <p class="terminal-line"><span class="terminal-prompt">$</span> role: <span class="terminal-val">web
+                developer</span></p>
+            <p class="terminal-line"><span class="terminal-prompt">$</span> stack: <span class="terminal-val">laravel
+                &middot; php &middot; mysql</span></p>
+            <p class="terminal-line"><span class="terminal-prompt">$</span> location: <span
+                class="terminal-val">indonesia (gmt+7)</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Projects Section (PRD 2.2, 2.3 & 5.3)
+         ========================================================================== -->
+    <section class="section" id="work">
+      <div class="container section-grid">
+        <div class="section-label">
+          <span class="section-index">01</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="section-body">
+          <div class="project-list">
+            <!-- Project 1: Bekas Dicintai -->
+            <article class="project-item">
+              <!-- Signature Detail 6: Corner Brackets -->
+              <span class="corner-bracket corner-bracket--tl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--tr" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--bl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--br" aria-hidden="true"></span>
+
+              <header class="project-header-row">
+                <h3 class="project-name">Bekas Dicintai</h3>
+                <span class="project-category">E-Commerce / Marketplace</span>
+              </header>
+
+              <div class="project-tech-stack" role="list" aria-label="Tech Stack">
+                <span class="chip" role="listitem">Laravel</span>
+                <span class="chip" role="listitem">PHP</span>
+                <span class="chip" role="listitem">MySQL</span>
+                <span class="chip" role="listitem">Tailwind CSS</span>
+                <span class="chip" role="listitem">JavaScript</span>
+                <span class="chip" role="listitem">Python</span>
+                <span class="chip" role="listitem">Flask</span>
+              </div>
+
+              <p class="project-description">
+                Platform e-commerce untuk jual beli barang preloved dengan sistem rekomendasi produk berbasis
+                content-based filtering dan fitur negosiasi
+                berbasis AI.
+              </p>
+
+              <button type="button" class="project-toggle-btn" aria-expanded="false"
+                aria-controls="project-detail-bekas-dicintai">
+                [ + ] Detail Teknis &amp; Fitur
+              </button>
+
+              <div class="project-detail-panel" id="project-detail-bekas-dicintai">
+                <!-- Technical Highlight (PRD 2.3 & 5.3: Blok anotasi bergaris kiri) -->
+                <div class="technical-highlight-block">
+                  <div class="highlight-title">Technical Highlight</div>
+                  <div class="highlight-content">
+                    <p>Mengimplementasikan Content-Based Filtering menggunakan TF-IDF dan Cosine Similarity untuk
+                      memberikan rekomendasi produk berdasarkan karakteristik produk.</p>
+                    <p>Menggunakan AI agent sebagai negosiator menggantikan penjual untuk menangani tawaran harga yang
+                      diajukan.</p>
+                  </div>
+                </div>
+
+                <!-- Key Features List -->
+                <div class="features-section">
+                  <div class="features-title">Key Features</div>
+                  <ul class="features-grid">
+                    <li class="feature-item">Authentication</li>
+                    <li class="feature-item">Buyer &amp; Seller</li>
+                    <li class="feature-item">Product management</li>
+                    <li class="feature-item">Shopping cart</li>
+                    <li class="feature-item">Checkout</li>
+                    <li class="feature-item">Payment Gateway</li>
+                    <li class="feature-item">Shipping API</li>
+                    <li class="feature-item">Product recommendation</li>
+                    <li class="feature-item">AI negotiation</li>
+                    <li class="feature-item">Data visualization</li>
+                    <li class="feature-item">Seller dashboard</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Inventory Management System -->
+            <article class="project-item">
+              <!-- Signature Detail 6: Corner Brackets -->
+              <span class="corner-bracket corner-bracket--tl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--tr" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--bl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--br" aria-hidden="true"></span>
+
+              <header class="project-header-row">
+                <h3 class="project-name">Inventory Management System</h3>
+                <span class="project-category">Inventory / Business Application</span>
+              </header>
+
+              <div class="project-tech-stack" role="list" aria-label="Tech Stack">
+                <span class="chip" role="listitem">Laravel</span>
+                <span class="chip" role="listitem">PHP</span>
+                <span class="chip" role="listitem">MySQL</span>
+                <span class="chip" role="listitem">Tailwind CSS</span>
+                <span class="chip" role="listitem">JavaScript</span>
+                <span class="chip" role="listitem">Chart.js</span>
+              </div>
+
+              <p class="project-description">
+                Aplikasi inventory untuk membantu pemilik toko es krim memantau stok bahan dan mendapatkan informasi
+                ketika persediaan mulai menipis.
+              </p>
+
+              <button type="button" class="project-toggle-btn" aria-expanded="false"
+                aria-controls="project-detail-inventory-system">
+                [ + ] Detail Teknis &amp; Fitur
+              </button>
+
+              <div class="project-detail-panel" id="project-detail-inventory-system">
+                <!-- Technical Highlight -->
+                <div class="technical-highlight-block">
+                  <div class="highlight-title">Technical Highlight</div>
+                  <div class="highlight-content">
+                    <p>Sistem dirancang untuk membantu pemilik mengambil tindakan sebelum stok produk mencapai kondisi
+                      kritis.</p>
+                  </div>
+                </div>
+
+                <!-- Key Features List -->
+                <div class="features-section">
+                  <div class="features-title">Key Features</div>
+                  <ul class="features-grid">
+                    <li class="feature-item">Inventory management</li>
+                    <li class="feature-item">Stock monitoring</li>
+                    <li class="feature-item">Low-stock notification</li>
+                    <li class="feature-item">Product management</li>
+                    <li class="feature-item">Employee management</li>
+                    <li class="feature-item">Owner dashboard</li>
+                    <li class="feature-item">Reporting</li>
+                    <li class="feature-item">Data visualization</li>
+                    <li class="feature-item">PDF report</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Sport Center -->
+            <article class="project-item">
+              <!-- Signature Detail 6: Corner Brackets -->
+              <span class="corner-bracket corner-bracket--tl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--tr" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--bl" aria-hidden="true"></span>
+              <span class="corner-bracket corner-bracket--br" aria-hidden="true"></span>
+
+              <header class="project-header-row">
+                <h3 class="project-name">Sport Center</h3>
+                <span class="project-category">Booking / Management System</span>
+              </header>
+
+              <div class="project-tech-stack" role="list" aria-label="Tech Stack">
+                <span class="chip" role="listitem">Laravel</span>
+                <span class="chip" role="listitem">PHP</span>
+                <span class="chip" role="listitem">MySQL</span>
+                <span class="chip" role="listitem">Tailwind CSS</span>
+                <span class="chip" role="listitem">JavaScript</span>
+              </div>
+
+              <p class="project-description">
+                Aplikasi web untuk membantu proses penyewaan lapangan Sport Center.
+              </p>
+
+              <button type="button" class="project-toggle-btn" aria-expanded="false"
+                aria-controls="project-detail-sport-center">
+                [ + ] Detail Teknis &amp; Fitur
+              </button>
+
+              <div class="project-detail-panel" id="project-detail-sport-center">
+                <!-- Key Features List -->
+                <div class="features-section">
+                  <div class="features-title">Key Features</div>
+                  <ul class="features-grid">
+                    <li class="feature-item">Field management</li>
+                    <li class="feature-item">Booking</li>
+                    <li class="feature-item">Schedule management</li>
+                    <li class="feature-item">User management</li>
+                    <li class="feature-item">Transaction management</li>
+                    <li class="feature-item">Admin dashboard</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Journey Section (PRD Personal Content Sec. 4 & PRD Product Sec. 2.2 — Dipadetin)
+         ========================================================================== -->
+    <section class="section" id="journey">
+      <div class="container section-grid">
+        <div class="section-label">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Journey</h2>
+        </div>
+
+        <div class="section-body">
+          <div class="timeline">
+            <!-- Timeline Item 1: Gunadarma -->
+            <div class="timeline-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-header">
+                <span class="timeline-period">SEP 2022 &ndash; AUG 2026</span>
+                <h3 class="timeline-title">Universitas Gunadarma</h3>
+                <span class="timeline-role">Sistem Informasi &middot; GPA 3.89</span>
+              </div>
+              <p class="timeline-desc">
+                Fokus pada pengembangan aplikasi web, arsitektur sistem informasi, dan penyelesaian masalah berbasis
+                teknologi.
+              </p>
+            </div>
+
+            <!-- Timeline Item 2: Andrastudio -->
+            <div class="timeline-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-header">
+                <span class="timeline-period">JAN 2023 &ndash; NOW</span>
+                <h3 class="timeline-title">Andrastudio</h3>
+                <span class="timeline-role">Freelance Data Entry</span>
+              </div>
+              <p class="timeline-desc">
+                Pengelolaan dan input data sesuai dengan permintaan klien dengan tetap menjaga akurasi, konsistensi
+                format, dan ketepatan waktu.
+              </p>
+              <div class="timeline-tags" aria-label="Skills applied">
+                <span class="chip">Data Entry</span>
+                <span class="chip">Data Management</span>
+                <span class="chip">Accuracy</span>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3: PT. Winnicode -->
+            <div class="timeline-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-header">
+                <span class="timeline-period">MAR 2025 &ndash; JUL 2025</span>
+                <h3 class="timeline-title">PT. Winnicode Garuda Teknologi</h3>
+                <span class="timeline-role">Web Developer Intern</span>
+              </div>
+              <p class="timeline-desc">
+                Merancang dan membangun website berita berbasis Laravel (MVC): perancangan skema database MySQL, UI di
+                Figma, manajemen artikel/kategori, dan dokumentasi proyek.
+              </p>
+              <div class="timeline-tags" aria-label="Tech Stack applied">
+                <span class="chip">Laravel</span>
+                <span class="chip">PHP</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Figma</span>
+                <span class="chip">MVC</span>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4: Building & Learning -->
+            <div class="timeline-item">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-header">
+                <span class="timeline-period">2026 &ndash; PRESENT</span>
+                <h3 class="timeline-title">Building &amp; Learning</h3>
+                <span class="timeline-role">Web Developer</span>
+              </div>
+              <p class="timeline-desc">
+                Eksperimen berkelanjutan mengembangkan produk web dan memperdalam arsitektur backend melalui project
+                mandiri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills Section (PRD Personal Content Sec. 5 & PRD Product Sec. 2.2, 6.0)
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container section-grid">
+        <div class="section-label">
+          <span class="section-index">03</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="section-body">
+          <div class="skills-grid">
+            <!-- Frontend Category -->
+            <div class="skill-category">
+              <div class="skill-category-title">Frontend</div>
+              <div class="skill-chips" role="list" aria-label="Frontend Skills">
+                <span class="chip" role="listitem">HTML</span>
+                <span class="chip" role="listitem">CSS</span>
+                <span class="chip" role="listitem">JavaScript</span>
+                <span class="chip" role="listitem">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <!-- Backend Category -->
+            <div class="skill-category">
+              <div class="skill-category-title">Backend</div>
+              <div class="skill-chips" role="list" aria-label="Backend Skills">
+                <span class="chip" role="listitem">PHP</span>
+                <span class="chip" role="listitem">Laravel</span>
+                <span class="chip" role="listitem">Python</span>
+                <span class="chip" role="listitem">Flask</span>
+              </div>
+            </div>
+
+            <!-- Database Category -->
+            <div class="skill-category">
+              <div class="skill-category-title">Database</div>
+              <div class="skill-chips" role="list" aria-label="Database Skills">
+                <span class="chip" role="listitem">MySQL</span>
+                <span class="chip" role="listitem">SQLite</span>
+                <span class="chip" role="listitem">PostgreSQL</span>
+              </div>
+            </div>
+
+            <!-- Tools Category -->
+            <div class="skill-category">
+              <div class="skill-category-title">Tools</div>
+              <div class="skill-chips" role="list" aria-label="Tools Skills">
+                <span class="chip" role="listitem">Git</span>
+                <span class="chip" role="listitem">GitHub</span>
+                <span class="chip" role="listitem">VS Code</span>
+                <span class="chip" role="listitem">Figma</span>
+                <span class="chip" role="listitem">Laragon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section (PRD 2.2, 5.4 & 6.0)
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container section-grid">
+        <div class="section-label">
+          <span class="section-index">04</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="section-body">
+          <p class="contact-text">
+            Tertarik berkolaborasi, mendiskusikan peluang kerja, atau membangun sistem aplikasi web bersama? Jangan ragu
+            untuk terhubung.
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:fanfasa88@gmail.com" class="btn btn-primary contact-btn-primary">
+              Hubungi via Email
+            </a>
+            <a href="#" class="btn btn-secondary contact-btn-secondary" download>
+              Download CV
+            </a>
+          </div>
+
+          <div class="contact-social-links" role="list" aria-label="Direct Profiles">
+            <a href="https://github.com/fathananfasa" target="_blank" rel="noopener noreferrer"
+              class="contact-link-pill" role="listitem">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fathan-anfasa-8a1a72248/" target="_blank"
+              rel="noopener noreferrer" class="contact-link-pill" role="listitem">
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>&copy; 2026 Muhammad Fathan Anfasa</span>
+      <span>Information Systems Graduate &middot; Indonesia</span>
+    </div>
+  </footer>
+
+  <!-- Signature Detail 5: Custom Cursor Element -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-crosshair"></div>
+  </div>
+
+  <!-- Interaction Scripts -->
+  <script src="./app.js" defer></script>
+</body>
+
+</html>
